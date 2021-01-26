@@ -1,0 +1,131 @@
+/* VARIÁVEIS E RESET */
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENTOS BASE */
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.netflix-logo {
+    padding: 10px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+
+
+/* FILME PRINCIPAL */
+.filme-principal {
+    font-size: 16px;
+    
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.botao {
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 7px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+carrossel-filmes {
+    margin-top: 5px;
+}
+
+.populares {
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+
+.botao-login {
+    background-color: #E50914;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.botao-login:hover {
+    background-color: white;
+    color: #E50914;
+}
